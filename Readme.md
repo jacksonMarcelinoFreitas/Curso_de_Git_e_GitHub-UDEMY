@@ -13,4 +13,3 @@ O status será modified, devendo add denovo para deixar pronto par commitar
 git commit -m "comentário" (Este comando faz o versionamento local do arquivo) (no nome do commit é interessande colocar as alterações que foram feitas)
 Não é possível commitar sem adicionar a nova modificação
 
-Aqui adicionei mais uma linha
