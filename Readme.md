@@ -1,4 +1,6 @@
 # 🔰Curso de Git e GitHub - Udemy
+Link do cusro:
+### https://www.udemy.com/course/git-e-github-para-iniciantes/learn/lecture/5120486#announcements
 
 ## 🔁Ciclo de vida dos Status dos arquivos
 
