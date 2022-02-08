@@ -62,48 +62,62 @@ Se fizer modificação nos arquivos que jâ estão remotos
     git commit -am "nome do commit" (já faz add e commit)
     git push origin master (envia para o tepositório remoto)
 
-
 Clonando repositórios remotos: faz o clone/cópia dos arquivos para sua máquina
-
-Fork em arquivos: faz a cópia dentro do GitHub
     git clone
 
-Branches: ramos
+Fork em arquivos: faz a cópia dentro do GitHub
 
-    Ramo principal -master;
-    Quais são as vantagens;
-    - é possível modificar os arquivos, sem modificar o branch principal;
-    - facilmente desligável;
-    - multiplas pessoas trabalhando;
-    - evita conflitos;
+📌Branches: ramos
+
+    Ramo principal - master;
+        Quais são as vantagens;
+        - é possível modificar os arquivos, sem modificar o branch principal;
+        - facilmente desligável;
+        - multiplas pessoas trabalhando;
+        - evita conflitos;
 
 
-Criando o branch no git
+📌Criando o branch no git
 
     git checkout -b nome-da-branch (cria uma branch)
     git branch (mostra/ lista as branchs disponíveis)
 
-Navegando  entre as branchs
+📌Navegando  entre as branchs
 
     Para mudar de branchs, basta:
         git checkout nome-do-branch;
-        git branch -D nome-do-branch (deleta a branch);
+        git branch -D nome-do-branch (deleta a branch);tagtag
 
-Mesclando/Unindo os branchs
+📌Mesclando/Unindo os branchs
 
     Merge: operação não destrutiva (não mexe no histórico, pois cria um commit extra para juntar as coisas)
     Rebase: apenas coloca o branch secundário e inclui ao início da fila no branch master, criando uma linearidade, perdendo a ordem cronológica)
 
-Ignorando arquivos: é pssível indicar quais serão os arquivos ignorados
+📌Ignorando arquivos: é possível indicar quais serão os arquivos ignorados com:
     .gitignore
 
-git stach:
+📌git stach:
     responsável por guaradar modificações ainda não commitadas
     git stach (fecha temporariamente seu arquvio em mudança)
     git stach apply (para voltar a mexer no arquivo)
     git stach list (lista os git stach que estão ativos)
     git stach clear (limpa os git stach)
 
-Fazer atalhos para comandos:
+📌Fazer atalhos para comandos:
     Ex.: atalho para o comando "git status"
     git config --global alias.s status (git config + --global + alias.atalho + comando subtituído)
+
+📌Versionando com Tags
+    git tag -a 1.0.0 -m "Readme finalizado "
+
+📌Revertendo ações sem resetar
+    git revert (reverte o commit, voltando ao estado anterior, sem perder do histórico a mudança feita )
+
+📌Apagando tags e branchs no repositório remoto
+    local : git tag -d 1.0.0
+    remote : git push origin :1.0.0
+    remote : git push origin :teste
+
+    
+## 👌🏻Durante as aulas também foram seguidos os diversos exemplos no terminal do git, até mesmo o **push deste arquivo**!
+## ☝🏻Este Readme é sobre anotações pessoais minhas sobre as aulas e pode conter diversos erros!
