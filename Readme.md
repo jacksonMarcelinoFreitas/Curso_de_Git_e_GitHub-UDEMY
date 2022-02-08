@@ -93,3 +93,17 @@ Mesclando/Unindo os branchs
 
     Merge: operação não destrutiva (não mexe no histórico, pois cria um commit extra para juntar as coisas)
     Rebase: apenas coloca o branch secundário e inclui ao início da fila no branch master, criando uma linearidade, perdendo a ordem cronológica)
+
+Ignorando arquivos: é pssível indicar quais serão os arquivos ignorados
+    .gitignore
+
+git stach:
+    responsável por guaradar modificações ainda não commitadas
+    git stach (fecha temporariamente seu arquvio em mudança)
+    git stach apply (para voltar a mexer no arquivo)
+    git stach list (lista os git stach que estão ativos)
+    git stach clear (limpa os git stach)
+
+Fazer atalhos para comandos:
+    Ex.: atalho para o comando "git status"
+    git config --global alias.s status (git config + --global + alias.atalho + comando subtituído)
